@@ -1,0 +1,64 @@
+# ========================
+# Build Output
+# ========================
+target/
+
+# ========================
+# IDE Files
+# ========================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+nb-configuration.xml
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.*
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# Maven Wrapper (if used)
+# ========================
+.mvn/wrapper/maven-wrapper.jar
+
+# ========================
+# Misc
+# ========================
+*.class
+*.jar
+*.war
+*.ear
+*.tmp
+*.swp
+*~

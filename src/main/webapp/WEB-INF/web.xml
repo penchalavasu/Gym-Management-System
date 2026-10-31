@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>FitnessCare</display-name>
+    <description>Gym and Fitness Management Web Application</description>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- ======================== SERVLETS ======================== -->
+
+    <!-- Auth Servlets -->
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.auth.HomeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.auth.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.auth.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.auth.LogoutServlet</servlet-class>
+    </servlet>
+
+    <!-- Admin Servlets -->
+    <servlet>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.admin.AdminDashboardServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminMemberServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.admin.AdminMemberServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminManagerServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.admin.AdminManagerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminDietPlanServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.admin.AdminDietPlanServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminProgressServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.admin.AdminProgressServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminComplaintServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.admin.AdminComplaintServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminReportServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.admin.AdminReportServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminProfileServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.admin.AdminProfileServlet</servlet-class>
+    </servlet>
+
+    <!-- Manager Servlets -->
+    <servlet>
+        <servlet-name>ManagerDashboardServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.manager.ManagerDashboardServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerMemberServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.manager.ManagerMemberServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerDietPlanServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.manager.ManagerDietPlanServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerProgressServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.manager.ManagerProgressServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerComplaintServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.manager.ManagerComplaintServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerReportServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.manager.ManagerReportServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerProfileServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.manager.ManagerProfileServlet</servlet-class>
+    </servlet>
+
+    <!-- Member Servlets -->
+    <servlet>
+        <servlet-name>MemberDashboardServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.member.MemberDashboardServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MemberProfileServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.member.MemberProfileServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MemberDietPlanServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.member.MemberDietPlanServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MemberProgressServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.member.MemberProgressServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MemberComplaintServlet</servlet-name>
+        <servlet-class>com.fitnesscare.controller.member.MemberComplaintServlet</servlet-class>
+    </servlet>
+
+    <!-- ======================== SERVLET MAPPINGS ======================== -->
+
+    <!-- Auth -->
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin -->
+    <servlet-mapping>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <url-pattern>/admin/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminMemberServlet</servlet-name>
+        <url-pattern>/admin/members</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminManagerServlet</servlet-name>
+        <url-pattern>/admin/managers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminDietPlanServlet</servlet-name>
+        <url-pattern>/admin/diet-plans</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProgressServlet</servlet-name>
+        <url-pattern>/admin/progress</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminComplaintServlet</servlet-name>
+        <url-pattern>/admin/complaints</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminReportServlet</servlet-name>
+        <url-pattern>/admin/reports</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProfileServlet</servlet-name>
+        <url-pattern>/admin/profile</url-pattern>
+    </servlet-mapping>
+
+    <!-- Manager -->
+    <servlet-mapping>
+        <servlet-name>ManagerDashboardServlet</servlet-name>
+        <url-pattern>/manager/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerMemberServlet</servlet-name>
+        <url-pattern>/manager/members</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerDietPlanServlet</servlet-name>
+        <url-pattern>/manager/diet-plans</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerProgressServlet</servlet-name>
+        <url-pattern>/manager/progress</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerComplaintServlet</servlet-name>
+        <url-pattern>/manager/complaints</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerReportServlet</servlet-name>
+        <url-pattern>/manager/reports</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerProfileServlet</servlet-name>
+        <url-pattern>/manager/profile</url-pattern>
+    </servlet-mapping>
+
+    <!-- Member -->
+    <servlet-mapping>
+        <servlet-name>MemberDashboardServlet</servlet-name>
+        <url-pattern>/member/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MemberProfileServlet</servlet-name>
+        <url-pattern>/member/profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MemberDietPlanServlet</servlet-name>
+        <url-pattern>/member/diet-plan</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MemberProgressServlet</servlet-name>
+        <url-pattern>/member/progress</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MemberComplaintServlet</servlet-name>
+        <url-pattern>/member/complaints</url-pattern>
+    </servlet-mapping>
+
+    <!-- ======================== FILTERS ======================== -->
+
+    <filter>
+        <filter-name>AuthenticationFilter</filter-name>
+        <filter-class>com.fitnesscare.filter.AuthenticationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/manager/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/member/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>AdminAuthFilter</filter-name>
+        <filter-class>com.fitnesscare.filter.AdminAuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminAuthFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ManagerAuthFilter</filter-name>
+        <filter-class>com.fitnesscare.filter.ManagerAuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ManagerAuthFilter</filter-name>
+        <url-pattern>/manager/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>MemberAuthFilter</filter-name>
+        <filter-class>com.fitnesscare.filter.MemberAuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MemberAuthFilter</filter-name>
+        <url-pattern>/member/*</url-pattern>
+    </filter-mapping>
+
+    <!-- ======================== ERROR PAGES ======================== -->
+
+    <error-page>
+        <error-code>403</error-code>
+        <location>/WEB-INF/views/error/403.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/views/error/404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/views/error/500.jsp</location>
+    </error-page>
+
+    <!-- Session Config -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+</web-app>
